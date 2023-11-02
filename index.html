@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.text{
+			color: white;
+		}
+	</style>
+</head>
+<body style="background-image: url(2.jpg); background-size: cover;">
+	<div style="background: ; width: 150px; height: 300px;">
+		<h2 class="textbooks text">1.Книга</h2>
+		<h2 class="textcat text">2. Кот</h2>
+		<h2 class="textm text">3. Мяч</h2>
+		<h2 class="textdoll text">4. Кукла</h2>
+		<h2 class="textpom text">5. Помидор</h2>
+		<h1 class="text">ОЧКИ: <span class="score">0</span></h1>
+	</div>
+	<img src='2.png' style="height: 80px; position: absolute; top: 650px; left: 630px; " class="books">
+	<img src="1.png" style="height: 90px; position: absolute; top: 60px; left: 920px;" class="cat">
+	<img src="3.png" style="height: 70px; position: absolute; top: 650px; left: 30px;" class="ball">
+	<img src="4.png" style="height: 80px; position: absolute; top: 340px; left: 1200px;" class="doll">
+	<img src="tomat.png" style="height: 50px; position: absolute; top: 80px; left: 430px;" class="tomat">
+
+	<img src="1.jpg" style="width: 300px; position: absolute; left: 500px; top: 20px; display: none;" class="win">
+	<script type="text/javascript">
+		let point = 0
+		document.querySelector('.books').onclick = function() {
+			alert('Ура!Ты нашел!')
+			document.querySelector('.books').style.display = 'none'
+			document.querySelector('.textbooks').style.textDecoration = 'line-through'
+			point = point + 1
+			document.querySelector('.score').innerHTML = point
+
+			if(point==5){
+			document.querySelector('.win').style.display = 'block'
+			}
+		}
+		document.querySelector('.cat').onclick = function() {
+			alert('Ура!Ты нашел!')
+			document.querySelector('.cat').style.display = 'none'
+			document.querySelector('.textcat').style.textDecoration = 'line-through'
+			point = point + 1
+			document.querySelector('.score').innerHTML = point
+
+			if(point==5){
+			document.querySelector('.win').style.display = 'block'
+			}
+		}
+		document.querySelector('.ball').onclick = function() {
+			alert('Ура!Ты нашел!')
+			document.querySelector('.ball').style.display = 'none'
+			document.querySelector('.textm').style.textDecoration = 'line-through'
+			point = point + 1
+			document.querySelector('.score').innerHTML = point
+
+			if(point==5){
+			document.querySelector('.win').style.display = 'block'
+			}
+		}
+		document.querySelector('.doll').onclick = function() {
+			alert('Ура!Ты нашел!')
+			document.querySelector('.doll').style.display = 'none'
+			document.querySelector('.textdoll').style.textDecoration = 'line-through'
+			point = point + 1
+			document.querySelector('.score').innerHTML = point
+
+			if(point==5){
+			document.querySelector('.win').style.display = 'block'
+			}
+		}
+		document.querySelector('.tomat').onclick = function() {
+			alert('Ура!Ты нашел!')
+			document.querySelector('.tomat').style.display = 'none'
+			document.querySelector('.textpom').style.textDecoration = 'line-through'
+			point = point + 1
+			document.querySelector('.score').innerHTML = point
+
+				if(point==5){
+			document.querySelector('.win').style.display = 'block'
+			}
+		}
+		
+
+
+	</script>
+
+</body>
+</html>
